@@ -1,4 +1,4 @@
-# Curso Web Moderno Completo com JavaScript 2022 + Projetos
+# Curso Web Moderno Completo com JavaScript 2022 + Projetos - Cod3r
 - Aplicações modernas para Web
 - Criar aplicações REAIS usando as mais modernas tecnologias do mercado
 - Últimos recursos de HTML, CSS, Javascript e vários frameworks

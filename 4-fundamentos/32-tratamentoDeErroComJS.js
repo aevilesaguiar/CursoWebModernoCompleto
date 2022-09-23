@@ -33,5 +33,5 @@ const obj= { name:'Flavio'}
 
 imprimirNomeGritando(obj)
 
-//EVITA MOSTRAR AO USUARIO detalhes de infrestrutura, mensagens em ingles
+//EVITA MOSTRAR AO USUARIO detalhes de infraestrutura, mensagens em ingles
 //p legal é lançar um hash que tenha um log o qual fique fpácil para invvestigar o erro 
