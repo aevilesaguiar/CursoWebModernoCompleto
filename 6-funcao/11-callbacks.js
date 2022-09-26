@@ -9,12 +9,12 @@ function imprimir(nome, indice){
 console.log("*****************************************")
 fabricantes.forEach(imprimir)
 console.log("*****************************************")
-fabricantes.forEach(function(fabricante) {
-    console.log(fabricante)
+fabricantes.forEach(function(fabricante) { //registrando a função quando eu passo para o foreach
+    console.log(fabricante);
 })
 
-console.log("*****************************************")
-fabricantes.forEach(fabricante=>console.log(fabricante))
+console.log("*****************************************");
+fabricantes.forEach(fabricante=>console.log(fabricante));//registrando a função quando eu passo para o foreach
 
 //callback nada mais é do que você passar uma função e essa função será chamada quando um evento acontecer
 //no caso acima o evento é o loop então quando ele encontra um novo elemento ele dispara um evento que é a função que você chamou no caso imprimir
@@ -23,3 +23,5 @@ fabricantes.forEach(fabricante=>console.log(fabricante))
 //chama o elemento indice  e chama o callback
 
 //outro exemplo é quando fazemos uma chamada ajax (quando fazemos uma chamada para o servidor) teremos uma uma url e uma  função de erro ou sucesso
+
+

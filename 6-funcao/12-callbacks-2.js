@@ -36,10 +36,10 @@ const notasBaixas2=notas.filter(function(nota){
 console.log(notasBaixas2);
 
 
-const notasAltas3 = notas.filter(nota=>nota>7);
+const notasAltas3 = notas.filter(nota=>nota>7);//registrando a função quando eu passo para o foreach
 console.log(notasAltas3);
 
 
-const notasBaixas3 = notas.filter(nota=>nota<7);
+const notasBaixas3 = notas.filter(nota=>nota<7);//registrando a função quando eu passo para o foreach eu estou dizendo chame essa função, armazene essa função e quando acontecer o evento de percorrer os itens chame essa função 
 console.log(notasBaixas3);
 
