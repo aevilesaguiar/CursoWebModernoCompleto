@@ -16,3 +16,14 @@
 //quando vai acessar um BD você faz I/0 porque vc precisa acessar o disco, os arquivos...
 //o node é um runtime js, que é formado pelo o V8 +LIBUV que é o que trata de forma assincrona a parte mais lenta do
 //processo, que é ler o banco de dados, acessar um arquivo tudo que diz respeito a I/O
+
+
+//npm : node package manager (gerenciador de pacotes do node)  , npm -v
+
+//instalando lodash: npm i lodash
+
+// O nodemon é uma biblioteca que ajuda no desenvolvimento de sistemas com o Node. 
+//js reiniciando automaticamente o servidor.
+//nodemon ele dá um restart e pega a versão mais nova do seu projeto
+//nodemon monitora as atualizações
+//instalando: npm i -g nodemon

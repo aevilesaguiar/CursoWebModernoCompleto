@@ -23,3 +23,7 @@
 - Os principais conceitos do Angular 9: Componentes, Diretivas, Pipes, Services e muito mais
 - Aprender Angular na Prática de forma muito objetiva
 - Desenvolvimento Web
+
+
+## Doc: https://docs.npmjs.com/cli/v8/commands
+
