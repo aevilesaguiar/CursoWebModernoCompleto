@@ -27,3 +27,5 @@
 
 ## Doc: https://docs.npmjs.com/cli/v8/commands
 
+## operador rest e spred :https://www.devmedia.com.br/javascript-operadores-rest-e-spread/41200
+
