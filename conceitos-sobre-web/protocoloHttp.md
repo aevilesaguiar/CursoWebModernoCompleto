@@ -25,14 +25,56 @@ TCP/IP: ele opera na pilha TCP/IP
 Esse protocolo te retorna conteudo para formar uma página web. Começa a aprtir do html, quando o html é interpretado pelo o brownser, ele vai perceber que tem um css
 aí ele abre uma requisição, que tem um js ele faz outra requisição, imagens, mídias.
 
-fluxo http->USUARIO INFORMA A URL-> BROWSER GERA A REQUISIÇÃO-> SERVIDOR WEB GERA A RESPOSTA-> BROWNSER EXIBE A PÁGINA
+fluxo http->1 - USUARIO INFORMA A URL-> 2 -BROWSER GERA A REQUISIÇÃO-> 3 -SERVIDOR WEB GERA A RESPOSTA-> 4- BROWNSER EXIBE A PÁGINA
 
 
 
+## MÉTODOS HTTP
+
+GET->www.google.com.br/search?q=web+moderno&hl=pt-br
+url:www.google.com.br/search
+?->separa a url dos parametros
+q=web+moderno->'q' que representa uma querie, parametros separados por chave'=' e valor 'web+moderno'
+&hl=pt-br->lingua da maquina para que ele possa retornar o resultado em portugues
+&hl=en-US->resiltado vem em ingles
+
+Quando voc~e tem uma requisição tipo GET, os parametros vão no próprio corpo da url
+Já o POST vai no corpo da requisição.
+
+A informação marcante desse tipo de requisição é que os parametros eles vão dentro da url.  O corpo fica vazio. 
 
 
 
+POST-> quando você tem uma requisição tipo POST os parametros vão no corpo da requisição.
+mesmo fazendo uma requisição tipo POST em que os parametros da reuisição vão no corpo, mesmo assim não é seguro, para que seja seguro é necessário que a sua requisição seja executada em cima de um protocolo https. Ou seja o https é um protocolo seguro que faz com que a comunicação com a máquina cliente para a maquina servidor seja criptografado.
+
+Na requisição via POST, você tem a requisição/verbo via POST, dentro do corpo da requsição você tem os parâmetros, para que do outro lado a requisição seja processada.
 
 
+PUT->
 
+DELETE->
+
+TRACE->
+
+OPTIONS->
+
+CONNECT->
+
+HEAD->
+
+REQUISIÇÃO E RESPOSTA( REQUEST E RESPONSE) (acontece repetidamente)
+
+
+## Grupos de Status de mensagem HTTP(status Code)
+
+1XX-Informação
+2xx-sucesso
+3xx-Redirecionamento
+4xx-erro no cliente
+5xx-erro no servidor
+
+
+## Referencias
+-https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Overview
 
