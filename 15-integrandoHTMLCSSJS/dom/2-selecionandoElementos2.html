@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Selecionar Elementos #02</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body class="conteudo exercicio">
+    <div id="primeiro">#primeiro</div>
+    <div>Segundo</div>
+    <div class="terceiro ultimo"><span wb-attrib>.terceiro .ultimo</span></div>
+    <script>              
+        /*QuerySelector e QuerySelectorAll */
+
+        //ele espera um seletor css, eu inclui # porque eu quero que ele saiba que eu quero selecionar um id
+        document.querySelector('#primeiro').classList.add('destaque')
+
+
+        /*querySelectorAll retorna um nodeList, e o nodeList tem a função forEach, map e reduce e outrous não existe
+        no caso de percorrer todos os elementos não precisa transformar em array, mas caso contrário tem que
+        transformar em array*/
+        const selecionar= seletor=>
+                document.querySelectorAll(seletor).forEach(e=>e.classList.add('destaque'))
+
+        const deSelecionar= seletor=>
+        document.querySelectorAll(seletor).forEach(e=>e.classList.remove('destaque'))
+
+        //selecionar todos os elementos
+        deSelecionar('*') //seletor universal *
+
+       selecionar('.terceiro.ultimo')   
+
+       deSelecionar('*') //seletor universal *
+
+       selecionar(':not(#primeiro')
+
+       deSelecionar('*') //seletor universal *
+
+       selecionar(':nth-child(1)')
+
+       deSelecionar('*') //seletor universal *
+
+       selecionar('div:nth-of-type(1)')
+
+       deSelecionar('*') //seletor universal *
+
+       selecionar('[wb-attrib')
+
+       /*querySelectorAll retorna um nodeList e podemos transformar 
+       ela num array*/
+
+    </script>
+</body>
+</html>

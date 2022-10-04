@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Selecionar Elementos #01</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body class="conteudo exercicio">
+    <div id="primeiro">#primeiro</div>
+    <div>Segundo</div>
+    <div class="terceiro ultimo">.terceiro .ultimo</div>
+    <script>         
+       
+        
+        document.getElementById('primeiro').classList.add('destaque');//classe destaque que está no css
+        //transformar htmlCollection em array
+        const divs = document.getElementsByTagName('div')
+        //peguei todos os elementos divs transformei num array, vou percorrer cada um deles removendo a classe destaque
+        Array.from(divs).forEach(e=>e.classList.remove('destaque'));
+
+        //outra forma de transformar um html collection em array é usar o operador spread
+
+        const divsArray=[...divs]
+        divsArray.forEach(e=> e.classList.add('destaque'))
+
+        //usar a função para selecionar uma classe
+        const ultimosElementos = document.getElementsByClassName('ultimo')
+       for(let e of ultimosElementos){
+
+        e.classList.remove('destaque')
+        /*Funções Tradicionais de como selecionar elementos da DOM 
+        - getElementById:
+        - getElementByTagName:passa o nome da tag e obtem os elementos
+        - getElementByClassName: passa o nome da classe e pega todos os elementos que está associada 
+        aquela classe 
+        
+        Podemos perceber que essas funções retornam um html collection
+        que não é um array.
+
+        Duas formas diferentes de transformar htmlCollection em um array. 
+        
+        - Usando a função Array.from(divs) , o qual divs é um htmlCollection
+        (const divs = document.getElementsByTagName('div'))) e eu posso fazer interaçõe
+        onde eu posso fazer um map, reduce, filter
+        
+        - Usando Operador Spread([...divs])
+
+        Mesmo que eu não transforme a htmlCollection eu posso iterar 
+        de uma forma transquila usando o for.
+
+        Caso eu queira trabalhar com todas as funções de array em transformo
+        o htmlCollection em Array
+
+        */
+
+       }
+    </script>
+</body>
+</html>
