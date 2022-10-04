@@ -14,6 +14,9 @@
             border: solid 5px #222;
         }
 
+        .m5 {
+            margin: 5px;
+        }
         .m30 {
             margin: 30px;
         }
@@ -26,8 +29,12 @@
         .mt30 {
             margin-top: 30px;
         }
+        /*margin colapse a margem se sobrepor,
+        você pode evitar usando o float ,mas por padrão ocorre
+        */
 
-        /* 
+        /*
+        podemos evitar o margin colapsse usando:
             float: left / right
             position: absolute
             display: inline-block
@@ -37,6 +44,7 @@
 
 <body>
     <div class="m30">Conteúdo 1</div>
+    <div class="m5">Conteúdo 1</div>
     <div class="m30" style="border: none"></div>
     <div class="m30">Conteúdo 2</div>
     <div class="mb30">Conteúdo 3</div>

@@ -5,7 +5,35 @@
     <meta charset="UTF-8">
     <title>Especificidade CSS</title>
     <style>
-        /* https://developer.mozilla.org/pt-BR/docs/Web/CSS/Specificity */
+        /* https://developer.mozilla.org/pt-BR/docs/Web/CSS/Specificity 
+        
+        
+        em linhas gerais: especificidade . . .;
+        1.regra com !important (evitar usar)
+        2.seletores mais especificos
+        3.última regra processada (empate)
+        
+        */
+
+        p{
+            background-color: #aaa;
+        }
+
+        /*seletor de classe sobressai em cima de seletor de tag pois ele possui maior especificidade*/
+        .observacao{
+            background-color: brown;
+            border: dashed;
+            border: 50px;
+            /*esse padding tem maior especificdade, important burlou a regra, ruim uso de important
+            ele é uma exceção*/
+            padding: 200px!important;
+        }
+
+        /*maior especificidade*/
+        p.observacao{
+                padding: 2px;
+        }
+
     </style>
 </head>
 

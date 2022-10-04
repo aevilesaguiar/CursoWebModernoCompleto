@@ -31,3 +31,5 @@ Registros DNS
 - DMX: Servidor de email
 - NS: servidor DNS (posso ter um servidor DNS dentro de outro DNS)
 - CNAME- Canonical Name (apelido), quando eu não quero que o cliente tenha acesso a url, sem ter a url oficial, eu aponto um endereço paar outro endereço
+
+

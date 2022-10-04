@@ -6,6 +6,37 @@
     <title>Display</title>
     <style>
         /* ... */
+
+        body{
+            font-size: 40px;
+            color: aliceblue;
+            background-color: coral;
+        }
+
+
+        ul{padding: 0;}
+        div{background-color: forestgreen;}
+        span{background-color: dodgerblue;}
+        li{ background-color: purple;}
+
+        div, span, li,ul{
+            width: 50%;
+            width: 200px;/*não fez diferença*/
+            height: 80px;
+            padding-top: 30px;
+
+            text-align: center;
+            display: block;/*por padrão a div tem o display setado para block,
+                            ul display inline por padrão  , li display list-item
+                            display block quer dizer que cada elemento ocupa 1 linha, na linha individual */
+            /*display: inline; com display inline eu não consigo definir altura , largura do componente 
+                            ele só considera padding */
+
+            /*display: inline-block; ele considera inline, mas leva em consideração, altura largura
+                                    e padding, é uma possibilidade de criar card view, menu(lista) */
+                        }
+
+
     </style>
 </head>
 

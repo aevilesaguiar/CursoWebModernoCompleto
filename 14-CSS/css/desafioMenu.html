@@ -6,9 +6,7 @@
     <title>Desafio Menu</title>
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <style>
-        /* ... */
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -43,8 +41,21 @@
         </aside>
     </header>
 
+    <!--deixar o item que de fato foi selecionado-->
     <script>
-        // ...
+        window.onhashchange=function(e){//função recebe um evento
+            const oldURL=e.oldURL.split('#')[1] /*eu só quero a a parte que fica após o #. split serve para dividir uma string em cima de um caractere */
+            const newURL= e.newURL.split('#')[1]
+            console.log(oldURL,newURL)
+
+            const oldMenu=document.querySelector(`.menu a[href='#${oldURL}']`)/*dentro do link eu tô pegando o atributo href*/
+            const newMenu=document.querySelector(`.menu a[href='#${newURL}']`)
+            // essa classe foi incluida para poder remover a seleção do menu, por que quando eu clico fica tudo selecionado
+           oldMenu && oldMenu.classList.remove('selected')
+
+            newMenu && newMenu.classList.add('selected')
+
+        }
     </script>
 </body>
 

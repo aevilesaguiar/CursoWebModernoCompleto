@@ -5,24 +5,36 @@
     <meta charset="UTF-8">
     <title>Float</title>
     <style>
+        /*float é mellhor não utilizar muito , o melhor seria o grid ou o flex layout*/
         body {
             background-color: #222;
         }
 
         .c1 {
             background-color: red;
+            float:right;
         }
 
         .c2 {
             background-color: green;
+            clear: right; /*ele eleimina a flutuação e passa para próxima linha*/
         }
         
         .c3 {
             background-color: blue;
+            clear: both;
         }
 
         .c4 {
             background-color: orange;
+            clear: left;
+        }
+
+        div{
+            height: 150px;
+            width: 150px;
+            /*float:right;
+            float: left;*/
         }
     </style>
 </head>

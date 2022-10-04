@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <title>CSS Grid #01</title>
     <style>
-        /* https://caniuse.com/#feat=css-grid */
+        /* https://caniuse.com/#feat=css-grid
+        css grid é bom trabalhar com firefox */
+        /*css grid é bidirecional com linhas e colunas*/
         
         html,
         body {
@@ -21,6 +23,28 @@
             font-size: 30px;
             border: solid 5px dodgerblue;
             background: #fff;
+        }
+
+        body{
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-columns: repeat(4,8.33% 8.33% 8.33%);/*vou ter 12 colunas*/
+            grid-template-columns: repeat(12,8.33% );/*vou ter 12 colunas*/
+            grid-template-columns: repeat(11,100px)100px;
+
+            /*definir o intervalo de uma coluna
+            minmax(100px, 300px)*/
+
+            /*12 itens*/
+            grid-template-columns: 200px 20% 1fr;/*fr =unidade fragmento*/
+            grid-template-columns: 3fr 6fr 3fr;
+            grid-template-rows: 50% 25% 12.5% 12.5% ;
+            grid-template-rows: 100px 1fr ;
+
+        }
+
+        .d8{
+            
         }
     </style>
 </head>

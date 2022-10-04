@@ -5,7 +5,27 @@
     <meta charset="UTF-8">
     <title>Box Model</title>
     <style>
-        /* ... */
+        /* 
+padding a: top rigth bottom left;
+
+padding/margin é uma propriedade short cuting posso colocar as 4 propriedade
+
+        ... */
+
+
+        body{font-size: 80px;}
+        .c1{background-color: orange;}
+        .c2{background-color: skyblue;}
+        .c3{background-color: tomato;}
+
+        div{
+            float: left;/*faz com que os elementos caiam para a esquerda, ele perde o conceito de block*/
+            padding: 10px 50px 100px 150px;
+
+            margin:0px 20px;
+            border: solid 15px pink;
+        }
+
     </style>
 </head>
 

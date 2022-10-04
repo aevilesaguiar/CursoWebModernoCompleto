@@ -5,12 +5,24 @@
     <meta charset="UTF-8">
     <title>Herança</title>
     <style>
-        /* ... */
+        /* ... quando a propriedade é riscada quer dizer que ela é sobrescrita
+         */
+
+         body{
+            font-family: monospace;
+            font-size: 40px;
+            border: solid 3px red;
+            padding: 20px;
+         }
+/*algumas propriedades são definidas por padrão por herança, mas outras nós precisamos definir*/
+         div{
+            border: inherit;/*herança*/
+         }
     </style>
 </head>
 
 <body>
-    <h1>Herança</h1>
+    <h1 style="background-color:green ;">Herança</h1>
     <div>Estou herdando</div>
 </body>
 
